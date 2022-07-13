@@ -1,5 +1,5 @@
 {% set name = "idds-workflow" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1d52f46d0a699d7742c47f80af27fcce54d86920f79334f6ee9fc1e76aed2da9
+  sha256: 46f4154e431d5df19c92ad9949046f35d856febbc813c58d7fc744689868de84
 
 build:
   noarch: python
