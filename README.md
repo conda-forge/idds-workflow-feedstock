@@ -1,11 +1,11 @@
-About idds-workflow
-===================
+About idds-workflow-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/idds-workflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/idds-workflow/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/idds-workflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: intelligent Data Delivery Service(iDDS) Package
 
