@@ -22,6 +22,7 @@ requirements:
   run:
     - idds-common =={{ version }}
     - python >=3.6
+    - stomp.py
 
 test:
   imports:
