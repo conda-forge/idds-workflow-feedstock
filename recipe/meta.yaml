@@ -7,25 +7,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name_pypi }}/{{ name_pypi }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name_pypi }}/{{ name_pypi }}-{{ version }}.tar.gz
   sha256: 013411e6a40a37276e42f099a6da497efaaea07035bdb76e448d9534c8e53e15
 
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - idds-common =={{ version }}
-    - python >=3.6
+    - python >={{ python_min }}
     - stomp.py
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - idds
     - idds.workflow
